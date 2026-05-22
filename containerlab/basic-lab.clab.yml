@@ -4,6 +4,8 @@ topology:
   defaults:
     kind: linux
     image: clab-ubuntu-softnet:latest
+    binds: 
+      - ./bin/entrypoint.sh:/entrypoint.sh 
 
   nodes:
     node1:
