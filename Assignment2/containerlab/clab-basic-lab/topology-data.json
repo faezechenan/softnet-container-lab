@@ -6,7 +6,7 @@
       "prefix": "clab",
       "mgmt": {
         "network": "clab",
-        "bridge": "br-5569aa7ddce2",
+        "bridge": "br-78f2e671f266",
         "ipv4-subnet": "172.20.20.0/24",
         "ipv4-gw": "172.20.20.1",
         "ipv6-subnet": "3fff:172:20:20::/64",
@@ -17,13 +17,13 @@
   },
   "ssh-pub-keys": ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGsyiIaYQg55ke8Bl7q0Q7HeWanA+CmcQYXZ1rwpL6ei","ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILiXvAIpuuJkCAwtikSr4Hcy1EijjvIu0jRI3/MUJbQN"],
   "nodes": {
-    "node1": {
+    "hs1": {
       "index": "0",
-      "shortname": "node1",
-      "longname": "clab-basic-lab-node1",
-      "fqdn": "node1.basic-lab.io",
+      "shortname": "hs1",
+      "longname": "clab-basic-lab-hs1",
+      "fqdn": "hs1.basic-lab.io",
       "group": "",
-      "labdir": "/home/faezeh/softnet-container-lab/containerlab/clab-basic-lab/node1",
+      "labdir": "/home/faezeh/softnet-container-lab/Assignment2/containerlab/clab-basic-lab/hs1",
       "kind": "linux",
       "image": "clab-ubuntu-softnet:latest",
       "mgmt-net": "",
@@ -34,27 +34,58 @@
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-5569aa7ddce2",
+        "clab-mgmt-net-bridge": "br-78f2e671f266",
         "clab-node-group": "",
         "clab-node-kind": "linux",
-        "clab-node-lab-dir": "/home/faezeh/softnet-container-lab/containerlab/clab-basic-lab/node1",
-        "clab-node-longname": "clab-basic-lab-node1",
-        "clab-node-name": "node1",
+        "clab-node-lab-dir": "/home/faezeh/softnet-container-lab/Assignment2/containerlab/clab-basic-lab/hs1",
+        "clab-node-longname": "clab-basic-lab-hs1",
+        "clab-node-name": "hs1",
         "clab-node-type": "",
         "clab-owner": "faezeh",
-        "clab-topo-file": "/home/faezeh/softnet-container-lab/containerlab/basic-lab.clab.yml",
+        "clab-topo-file": "/home/faezeh/softnet-container-lab/Assignment2/containerlab/basic-lab.clab.yml",
         "containerlab": "basic-lab"
       },
       "port-bindings": [
       ]
     },
-    "node2": {
+    "hs2": {
       "index": "1",
-      "shortname": "node2",
-      "longname": "clab-basic-lab-node2",
-      "fqdn": "node2.basic-lab.io",
+      "shortname": "hs2",
+      "longname": "clab-basic-lab-hs2",
+      "fqdn": "hs2.basic-lab.io",
       "group": "",
-      "labdir": "/home/faezeh/softnet-container-lab/containerlab/clab-basic-lab/node2",
+      "labdir": "/home/faezeh/softnet-container-lab/Assignment2/containerlab/clab-basic-lab/hs2",
+      "kind": "linux",
+      "image": "clab-ubuntu-softnet:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-78f2e671f266",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/faezeh/softnet-container-lab/Assignment2/containerlab/clab-basic-lab/hs2",
+        "clab-node-longname": "clab-basic-lab-hs2",
+        "clab-node-name": "hs2",
+        "clab-node-type": "",
+        "clab-owner": "faezeh",
+        "clab-topo-file": "/home/faezeh/softnet-container-lab/Assignment2/containerlab/basic-lab.clab.yml",
+        "containerlab": "basic-lab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "rt1": {
+      "index": "2",
+      "shortname": "rt1",
+      "longname": "clab-basic-lab-rt1",
+      "fqdn": "rt1.basic-lab.io",
+      "group": "",
+      "labdir": "/home/faezeh/softnet-container-lab/Assignment2/containerlab/clab-basic-lab/rt1",
       "kind": "linux",
       "image": "clab-ubuntu-softnet:latest",
       "mgmt-net": "",
@@ -65,15 +96,15 @@
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-5569aa7ddce2",
+        "clab-mgmt-net-bridge": "br-78f2e671f266",
         "clab-node-group": "",
         "clab-node-kind": "linux",
-        "clab-node-lab-dir": "/home/faezeh/softnet-container-lab/containerlab/clab-basic-lab/node2",
-        "clab-node-longname": "clab-basic-lab-node2",
-        "clab-node-name": "node2",
+        "clab-node-lab-dir": "/home/faezeh/softnet-container-lab/Assignment2/containerlab/clab-basic-lab/rt1",
+        "clab-node-longname": "clab-basic-lab-rt1",
+        "clab-node-name": "rt1",
         "clab-node-type": "",
         "clab-owner": "faezeh",
-        "clab-topo-file": "/home/faezeh/softnet-container-lab/containerlab/basic-lab.clab.yml",
+        "clab-topo-file": "/home/faezeh/softnet-container-lab/Assignment2/containerlab/basic-lab.clab.yml",
         "containerlab": "basic-lab"
       },
       "port-bindings": [
@@ -84,15 +115,31 @@
     {
       "endpoints": {
         "a": {
-          "node": "node1",
+          "node": "hs1",
           "interface": "eth1",
-          "mac": "aa:c1:ab:7c:06:5b",
+          "mac": "aa:c1:ab:97:a9:e9",
           "peer": "z"
         },
         "z": {
-          "node": "node2",
+          "node": "rt1",
           "interface": "eth1",
-          "mac": "aa:c1:ab:a0:7e:c8",
+          "mac": "aa:c1:ab:14:16:3c",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "rt1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:25:e8:9f",
+          "peer": "z"
+        },
+        "z": {
+          "node": "hs2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:44:48:f5",
           "peer": "a"
         }
       }

@@ -8,19 +8,31 @@ topology:
       - ./bin/entrypoint.sh:/entrypoint.sh 
 
   nodes:
-    node1:
+    hs1:
       binds:
-        - configs/node1.cfg:/etc/nodes/node1.cfg:ro
+        - configs/hs1.cfg:/etc/nodes/hs1.cfg:ro
       exec:
         - bash /entrypoint.sh
 
-    node2:
+    rt1:
       binds:
-        - configs/node2.cfg:/etc/nodes/node2.cfg:ro
+        - configs/rt1.cfg:/etc/nodes/rt1.cfg:ro
+      exec:
+        - bash /entrypoint.sh
+
+    hs2:
+      binds:
+        - configs/hs2.cfg:/etc/nodes/hs2.cfg:ro
       exec:
         - bash /entrypoint.sh
 
   links:
     - endpoints:
-        - node1:eth1
-        - node2:eth1
+        - hs1:eth1
+        - rt1:eth1
+
+    - endpoints:
+        - rt1:eth2
+        - hs2:eth1
+
+ 
